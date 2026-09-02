@@ -1,0 +1,6 @@
+.tmp/
+.pi-config/
+artifacts/
+reports/
+coverage/
+*.log

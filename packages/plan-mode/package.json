@@ -1,0 +1,39 @@
+{
+	"name": "@earendil-works/pi-plan-mode",
+	"version": "0.80.6",
+	"description": "Project-local Plan Mode extension for Pi",
+	"type": "module",
+	"license": "MIT",
+	"private": true,
+	"keywords": [
+		"pi-package",
+		"pi-extension",
+		"pi",
+		"plan-mode",
+		"planning"
+	],
+	"files": [
+		"src",
+		"README.md",
+		"LICENSE"
+	],
+	"pi": {
+		"extensions": [
+			"./src/plan-mode.ts"
+		]
+	},
+	"scripts": {
+		"build": "tsgo -p tsconfig.build.json",
+		"test": "tsx --test test/*.test.ts",
+		"typecheck": "tsgo -p tsconfig.json"
+	},
+	"peerDependencies": {
+		"@earendil-works/pi-coding-agent": "^0.80.6"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/wsfwb/CodingAgent.git",
+		"directory": "extensions/pi-plan-mode"
+	},
+	"author": "wsfwb"
+}
